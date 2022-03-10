@@ -1,4 +1,4 @@
-import {getConnection} from '../repositorio'
+import {conexion} from '../repositorio'
 
 export class ArticleController {   
     private static instance: ArticleController;
@@ -19,7 +19,7 @@ export class ArticleController {
 
     public async listArticles()
     {
-        const pool = getConnection();
+        const pool = conexion.getInstance().getConexion();
         const result  = (await pool).request().query('dbo.getEntregables 1')
         return (await result).recordset;
     }

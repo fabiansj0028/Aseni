@@ -1,6 +1,10 @@
 import * as sql from "mssql";
 
-export const dbsettings = {
+export class conexion{
+
+  private static instance : conexion;
+
+  private dbSettings ={
     user:'sa',
     password: '1234',
     server: 'localhost',
@@ -9,15 +13,22 @@ export const dbsettings = {
         encrypt: true,
         trustServerCertificate: true
     }
-};
-
-export const getConnection = async () => {
-    try {
-      const pool = await sql.connect(dbsettings);
-      return pool;
-    } catch (error) {
-      console.error(error);
-    }
   };
 
+  private constructor(){
+  }
+
+  public static getInstance(){
+    if(!this.instance){
+      this.instance = new conexion();
+    }
+    return this.instance;
+  }
+
+  public async getConexion(){
+   const pool = await sql.connect(this.dbSettings)
+   return pool;
+  }
+}
+  
 export {sql}
