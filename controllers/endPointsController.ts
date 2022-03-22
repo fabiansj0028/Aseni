@@ -80,7 +80,6 @@ export class EndPointsController {
     }
     public listEndPoint6(IdCiudadano:String, IdPlan:String, ListaEntreg:String, ListCalif:String): Promise<any>
     {
-        console.log(IdCiudadano,IdPlan,ListaEntreg,ListCalif)
         const pool = conexionAseni.getInstance().getConexion();
         const result  = pool.then(pool=>{
            return pool.request().input('inUsuario',IdCiudadano)

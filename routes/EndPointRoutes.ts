@@ -47,7 +47,7 @@ app.get("/endpoint5", (req, res,next) => {
 
 });
 
-app.get("/endpoint6", (req, res,next) => {
+app.post("/endpoint6", (req, res,next) => {
     EndPointsController.getInstance().listEndPoint6(req.query.IdCiudadano.toString(),
                                                     req.query.IdPlan.toString(),
                                                     req.query.ListEntreg.toString(),

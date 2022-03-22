@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "9464bfd7-7fbe-48ed-adde-744db7488385",
+		"name": "Aseni",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EndPoint1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/caso2/endpoint1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"caso2",
+						"endpoint1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EndPoint2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/caso2/endpoint2?accion=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"caso2",
+						"endpoint2"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EndPoint3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/caso2/endpoint3?palabras=Empleos,Casas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"caso2",
+						"endpoint3"
+					],
+					"query": [
+						{
+							"key": "palabras",
+							"value": "Empleos,Casas"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EndPoint5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/caso2/endpoint5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"caso2",
+						"endpoint5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EndPoint6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/caso2/endpoint6?IdCiudadano=1&IdPlan=4&ListEntreg=1,2,3,4,5&ListCalif=1,8,9,6,3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"caso2",
+						"endpoint6"
+					],
+					"query": [
+						{
+							"key": "IdCiudadano",
+							"value": "1"
+						},
+						{
+							"key": "IdPlan",
+							"value": "4"
+						},
+						{
+							"key": "ListEntreg",
+							"value": "1,2,3,4,5"
+						},
+						{
+							"key": "ListCalif",
+							"value": "1,8,9,6,3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
