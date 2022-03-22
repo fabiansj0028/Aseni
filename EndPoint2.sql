@@ -5,7 +5,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 ALTER PROCEDURE dbo.EndPoint2
-
+@inAccion INT
 AS
 BEGIN
 
@@ -19,6 +19,7 @@ BEGIN
 		  INNER JOIN Entregables E ON E.IdEntregable = C.IdEntregable
 		  INNER JOIN Acciones A ON A.IdAccion = E.IdAccion
 		  INNER JOIN Partidos P ON P.IdPartido = E.IdPartido	
+		  WHERE @inAccion = A.IdAccion
 		) AS DR
 		PIVOT
 		(

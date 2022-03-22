@@ -13,8 +13,8 @@ export class conexionAseni{
     database: 'Aseni',
     pool: {
       max:4,
-      min:0,
-
+      min:1,
+      idleTimeoutMillis: 30000
     },
     options:{
         encrypt: true,
@@ -34,8 +34,7 @@ export class conexionAseni{
   }
 
   public getConexion(): Promise<any>
-  {
-    
+  { 
     return this.pool.connect().then(pool=>{
       if (pool.connected){
         return pool;
