@@ -1,1 +1,1 @@
-export { ArticleController } from './pruebaController'
+export { EndPointsController } from './endPointsController'

@@ -1,1 +1,1 @@
-export {conexion} from "./conexion";
+export {conexionAseni} from "./conexionAseni";

@@ -1,6 +1,6 @@
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
-import {articlesrouter} from './pruebaRoute';
+import {endpointsrouter} from './EndPointRoutes';
 
 class Routes {
 
@@ -20,7 +20,7 @@ class Routes {
     }
 
     private routes(): void {
-        this.express.use('/caso2', articlesrouter);
+        this.express.use('/caso2', endpointsrouter);
     }
 }
 
