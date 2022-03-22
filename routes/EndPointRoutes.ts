@@ -36,6 +36,17 @@ app.get("/endpoint3", (req, res,next) => {
 
 });
 
+app.get("/endpoint4", (req, res,next) => {
+    EndPointsController.getInstance().listEndPoint4()
+    .then((data)=>{
+        res.json(data);
+    })
+    .catch((err)=>{
+        return "{msg: \"error\"}";
+    });
+
+});
+
 app.get("/endpoint5", (req, res,next) => {
     EndPointsController.getInstance().listEndPoint5()
     .then((data)=>{

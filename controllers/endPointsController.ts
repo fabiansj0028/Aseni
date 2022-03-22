@@ -65,6 +65,20 @@ export class EndPointsController {
         return result;
     }
 
+    public listEndPoint4(): Promise<any>
+    {
+        const pool = conexionAseni.getInstance().getConexion();
+        const result  = pool.then(pool=>{
+           return pool.request().query('dbo.EndPoint4').then(result=>{
+               return result.recordset;
+           })
+        })
+        .catch((err)=>{
+            return "{msg: \"error\"}";
+        })
+        return result;
+    }
+
     public listEndPoint5(): Promise<any>
     {
         const pool = conexionAseni.getInstance().getConexion();

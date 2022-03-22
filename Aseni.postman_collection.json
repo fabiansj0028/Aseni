@@ -92,6 +92,27 @@
 			"response": []
 		},
 		{
+			"name": "EndPoint4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/caso2/endpoint4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"caso2",
+						"endpoint4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "EndPoint5",
 			"request": {
 				"method": "GET",
