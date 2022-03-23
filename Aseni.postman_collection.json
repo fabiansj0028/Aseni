@@ -22,10 +22,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/caso2/endpoint1",
+					"raw": "http://25.0.1.62:5000/api/caso2/endpoint1",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"25",
+						"0",
+						"1",
+						"62"
 					],
 					"port": "5000",
 					"path": [
@@ -43,10 +46,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/caso2/endpoint2?accion=1",
+					"raw": "http://25.0.1.62:5000/api/caso2/endpoint2?accion=1",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"25",
+						"0",
+						"1",
+						"62"
 					],
 					"port": "5000",
 					"path": [
@@ -70,10 +76,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/caso2/endpoint3?palabras=Empleos,Casas",
+					"raw": "http://25.0.1.62:5000/api/caso2/endpoint3?palabras=Empleos,Casas",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"25",
+						"0",
+						"1",
+						"62"
 					],
 					"port": "5000",
 					"path": [
@@ -97,10 +106,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/caso2/endpoint4",
+					"raw": "http://25.0.1.62:5000/api/caso2/endpoint4",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"25",
+						"0",
+						"1",
+						"62"
 					],
 					"port": "5000",
 					"path": [
@@ -118,10 +130,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/caso2/endpoint5",
+					"raw": "http://25.0.1.62:5000/api/caso2/endpoint5",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"25",
+						"0",
+						"1",
+						"62"
 					],
 					"port": "5000",
 					"path": [
@@ -139,10 +154,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/caso2/endpoint6?IdCiudadano=1&IdPlan=4&ListEntreg=1,2,3,4,5&ListCalif=1,8,9,6,3",
+					"raw": "http://25.0.1.62:5000/api/caso2/endpoint6?IdCiudadano=1&IdPlan=4&ListEntreg=1,2,3,4,5&ListCalif=1,8,9,6,3",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"25",
+						"0",
+						"1",
+						"62"
 					],
 					"port": "5000",
 					"path": [
